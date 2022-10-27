@@ -40,7 +40,7 @@
 
         <!-- https://getbootstrap.com/docs/ -->
         <script src="{{ 'assets/jquery/dist/jquery.min.js' | relative_url }}?{{ time }}"></script>
-        <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js?{{ time }}"></script>
+        <script src="{{ 'assets/bootstrap/dist/js/bootstrap.bundle.min.js' | relative_url }}?{{ time }}"></script>
 
         <!-- https://bootstrap-table.com/docs/getting-started/introduction/ -->
         <link href="{{ 'assets/bootstrap-table/dist/bootstrap-table.min.css' | relative_url }}?{{ time }}" rel="stylesheet">
@@ -88,7 +88,7 @@
         <script src="{{ 'assets/instantsearch.js/dist/instantsearch.production.min.js' | relative_url }}?{{ time }}"></script>
         {%- endif %}
 
-        <link href="{{ 'assets/' | append: page.layout | append: '.css' }}?{{ time }}" rel="stylesheet">
+        <link href="{{ 'assets/page.css' | relative_url }}?{{ time }}" rel="stylesheet">
         <script src="{{ 'assets/jekyll-theme-cs50.js' | relative_url }}?{{ time }}"></script>
 
         <script>
