@@ -39,19 +39,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
         <!-- https://getbootstrap.com/docs/ -->
-        <script src="{{ assets/jquery/dist/jquery.min.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/jquery/dist/jquery.min.js' | relative_url }}?{{ time }}"></script>
         <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js?{{ time }}"></script>
 
         <!-- https://bootstrap-table.com/docs/getting-started/introduction/ -->
-        <link href="{{ assets/bootstrap-table/dist/bootstrap-table.min.css | relative_url }}?{{ time }}" rel="stylesheet">
-        <script src="{{ assets/bootstrap-table/dist/bootstrap-table.min.js | relative_url }}?{{ time }}"></script>
-        <script src="{{ assets/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js | relative_url }}?{{ time }}"></script>
+        <link href="{{ 'assets/bootstrap-table/dist/bootstrap-table.min.css' | relative_url }}?{{ time }}" rel="stylesheet">
+        <script src="{{ 'assets/bootstrap-table/dist/bootstrap-table.min.js' | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js' | relative_url }}?{{ time }}"></script>
 
         <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
-        <link href="{{ assets/@fortawesome/fontawesome-free/css/all.min.css | relative_url }}?{{ time }}" rel="stylesheet">
+        <link href="{{ 'assets/@fortawesome/fontawesome-free/css/all.min.css' | relative_url }}?{{ time }}" rel="stylesheet">
 
         <!-- https://moment.github.io/luxon/ -->
-        <script src="{{ assets/luxon.min.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/luxon.min.js' | relative_url }}?{{ time }}"></script>
 
         <!-- http://docs.mathjax.org/ -->
         <!-- https://www.jsdelivr.com/package/npm/mathjax?path=es5 -->
@@ -76,7 +76,7 @@
         <script crossorigin="anonymous" integrity="sha256-oBWDuxBG1C5U0t3xjmZZ1UAlt9sKeSRk26KiVy4jxpY=" src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
 
         <!-- https://github.com/scratchblocks/scratchblocks/releases -->
-        <script src="{{ assets/scratchblocks.min.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/scratchblocks.min.js' | relative_url }}?{{ time }}"></script>
 
         <!-- https://mermaid-js.github.io/ -->
         <!-- https://www.jsdelivr.com/package/npm/mermaid -->
@@ -84,12 +84,12 @@
 
         {% if site.algolia -%}
         <!-- https://www.algolia.com/doc/guides/building-search-ui/installation/js/ -->
-        <script src="{{ assets/algoliasearch/dist/algoliasearch-lite.umd.js | relative_url }}?{{ time }}"></script>
-        <script src="{{ assets/instantsearch.js/dist/instantsearch.production.min.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/algoliasearch/dist/algoliasearch-lite.umd.js' | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/instantsearch.js/dist/instantsearch.production.min.js' | relative_url }}?{{ time }}"></script>
         {%- endif %}
 
         <link href="{{ 'assets/' | append: page.layout | append: '.css' }}?{{ time }}" rel="stylesheet">
-        <script src="{{ assets/jekyll-theme-cs50.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/jekyll-theme-cs50.js' | relative_url }}?{{ time }}"></script>
 
         <script>
             window.CS50 = {
@@ -303,7 +303,7 @@
         </script>
         {% endif %}
  
-        <script src="{{ assets/page.js | relative_url }}?{{ time }}"></script>
+        <script src="{{ 'assets/page.js' | relative_url }}?{{ time }}"></script>
 
     </body>
 
